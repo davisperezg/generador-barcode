@@ -959,7 +959,7 @@ const ProductScreen = () => {
                       </td>
                       <td className="text-center">Pasado</td>
                     </tr>
-                  );
+                  );    
                 })}
               </tbody>
             </table> 
