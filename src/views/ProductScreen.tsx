@@ -972,12 +972,12 @@ const ProductScreen = () => {
                         <div className="page-break flex">
                           <BarCodeComponent
                             producto={a.PRODUCTO}
-                            barcode={watch(`barcode_${a.COD}`)}
+                            barcode={a.COD_BARRA.padStart(15, "0")}
                           />
                           {Number(watch("column_imp")) === 2 && (
                             <BarCodeComponent
                               producto={a.PRODUCTO}
-                              barcode={watch(`barcode_${a.COD}`)}
+                              barcode={a.COD_BARRA.padStart(15, "0")}
                             />
                           )}
                         </div>
